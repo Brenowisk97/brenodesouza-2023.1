@@ -1,0 +1,26 @@
+# brenodesouza-2023.1
+#index.html
+<html>
+    <head>
+        <title>rev2</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div>
+            <h2>Primeira Div</h2>
+            <p>um<span>texto</span></p>
+        </div>
+        <div>
+            <h2>Segunda Div</h2>
+            <p><input type='Text'></p>
+            <p><button>/Um botão</button></p>
+        </div>
+    </body>
+</html>
+#styles.css
+div{
+    border:solid black 1px;
+    border-radius: 5px;
+    
+}
