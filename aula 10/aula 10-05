@@ -1,0 +1,63 @@
+#index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exemplos</title>
+    <link rel="stylesheet"href="estilos.css"
+</head>
+<body>
+<div class="iprincipal">
+    <div id="idiv1">1</div>
+    <div id="idiv2">2</div>
+    <div id="idiv3">3</div>
+    <div id="idiv4">4</div>
+    <div id="idiv5">5</div>
+    <div id="idiv6">6</div>
+    <div id="idiv7">7</div>
+    <div id="idiv8">8</div>
+    </div> 
+</body>
+</html>
+#estilos.css
+#iprincipal{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10 px
+    background-color orange;
+    text-align: center;
+}
+#iprincipal div{
+background-color: blue;
+height: 50px;
+margin: 5px;
+}
+
+@media only screen and (max-width:375px){
+    #iprincipal {
+        grid-template-columns:auto;
+    }
+    #idiv4,#idiv5,#idiv6,#idiv7,#idiv8{
+            display:none;
+    }
+}
+
+@media only screen and (min-width:376px){
+    #iprincipal {
+        grid-template-columns:auto auto;
+    }
+    #idiv7,#idiv8{
+        display:none;
+    }
+}
+
+@media only screen and (min-width:768px){
+        #iprincipal{
+            grid-template-columns: auto auto auto auto;
+        }
+        #idiv7, #idiv8{
+            display:block;
+        }
+}
